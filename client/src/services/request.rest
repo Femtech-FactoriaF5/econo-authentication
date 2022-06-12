@@ -1,0 +1,10 @@
+GET http://localhost:1234/experiencias?title_like=ips
+
+##########33
+POST http://localhost:1234/register
+Content-Type: application/json
+
+{
+    "email":"mi@mail.com",
+    "password":"1234"
+}

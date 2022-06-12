@@ -1,2 +1,2 @@
-export * as MyExperiences from './UserExperiences/';
-export * as MyProfile from './UserProfile/';
+export {MyExperiences} from './MyExperiences';
+export {MyProfile} from './MyProfile';

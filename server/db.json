@@ -1,0 +1,17 @@
+{
+  "experiencias": [
+    {
+      "id": 1,
+      "title": "Lorem Ipsum",
+      "image": "holder.js/300x200",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde qui neque molestiae, quos ex nam perferendis eligendi commodi assumenda saepe reprehenderit. Vitae sequi doloribus quisquam iusto, ipsa quo obcaecati a?"
+    }
+  ],
+  "users": [
+    {
+      "email": "mi@mail.com",
+      "password": "$2a$10$s7eexebYmZldBgdUB2uXqeH3KmNhGHozJliuj3CWaSZlCcGC.PiX6",
+      "id": 1
+    }
+  ]
+}

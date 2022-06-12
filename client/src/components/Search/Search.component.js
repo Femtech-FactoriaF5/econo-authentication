@@ -3,6 +3,7 @@ import { useState } from 'react';
 import lupa from '../../images/lupa.svg';
 import "./Search.style.css";
 import * as ROUTES from '../../constants/routes';
+
 export const Search = () => {
   const [search, setSearch] = useState('');
   const navigate = useNavigate();

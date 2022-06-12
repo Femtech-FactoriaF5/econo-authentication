@@ -5,8 +5,25 @@ import './Navigation.style.css';
 import logo from '../../images/logo.png';
 import gorilla from '../../images/gorilla-icon.svg';
 import basket from '../../images/basket-icon.svg';
+import { useEffect, useState } from "react";
 
-const Navigation = ({ logged, search, handleChange }) => {
+const Navigation = () => {
+    const [loggedInUser, setLoggedInUser] = useState(null);
+    useEffect(() => {
+        setLoggedInUser(localStorage.getItem('token') || null);
+        window.addEventListener('storage', storageEventHandler, false)
+
+    }, [])
+
+    const storageEventHandler = () => {
+        console.log("hi from storageEventHandler")
+        setLoggedInUser(localStorage.getItem('token') || null)
+    }
+
+    const onLogOut = ()=>{
+       setLoggedInUser(localStorage.setItem('token',null));
+
+    }
 
     return (
         <>
@@ -14,14 +31,15 @@ const Navigation = ({ logged, search, handleChange }) => {
                 <nav className="navigation-bar">
                     <Link to={ROUTES.HOME}><img src={logo} alt="Home"></img></Link>
                     <Search className='navigation-search' />
-                    {logged && <ul className="user-logged">
+                    {console.log(loggedInUser)}
+                    {loggedInUser && <ul className="user-logged">
                         <li><img src={gorilla} alt={"User Login"}></img></li>
                         <li><Link to={ROUTES.USER_PROFILE}>Profile</Link></li>
                         <li><Link to={ROUTES.USER_EXPERIENCES}>My Experiences</Link></li>
-                        <li><button type="">Log out</button></li>
+                        <li><button onClick={onLogOut} type="">Log out</button></li>
                     </ul>}
                     <div className="icons">
-                        <Link to={ROUTES.SIGN_IN}><img src={gorilla} alt={"User Login"}></img></Link>
+                        {!loggedInUser && <Link to={ROUTES.SIGN_IN}><img src={gorilla} alt={"User Login"}></img></Link>}
                         <Link to={ROUTES.BOOKING}><img src={basket} alt="Reservas"></img></Link>
                     </div>
                 </nav>
