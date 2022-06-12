@@ -1,0 +1,32 @@
+header{
+    width:100%;
+}
+.navigation-bar{
+    width:inherit;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.navigation-search{
+    flex-shrink:5;
+}
+
+img[alt="Home"]{
+    height:8rem;
+    width:auto;
+    flex-shrink:1;
+}
+.icons{
+    flex-shrink:1;
+}
+.icons img{
+    height:2.5rem;
+}
+
+@media(min-width:800px){
+
+/*     .icons{
+        transform:translateX(-100%);
+    }*/
+}
