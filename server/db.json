@@ -1,0 +1,21 @@
+{
+  "experiencias": [
+    {
+      "id": 1,
+      "title": "experiencia1",
+      "descripcion": "experiencia1"
+    },
+    {
+      "id": 2,
+      "title": "experiencia2",
+      "descripcion": "experiencia2"
+    }
+  ],
+  "users": [
+    {
+      "email": "mi@mail.com",
+      "password": "$2a$10$hvcgdhNDjPRYZZlBE6o0/e2LPimvyuAh4HCbjUnLe9g8F0jWnEN/G",
+      "id": 1
+    }
+  ]
+}

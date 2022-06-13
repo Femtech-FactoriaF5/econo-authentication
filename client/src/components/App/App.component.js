@@ -7,8 +7,8 @@ import { Gallery } from '../Gallery';
 import { Login} from '../auth/Login';
 import { Search } from '../Search';
 import { Experience} from '../Experience';
-import {MyExperiences, MyProfile} from '../user';
-import { NoMatch } from '../NoMatch';
+import { MyProfile} from '../user';
+
 import * as ROUTES from '../../constants/routes';
 
 export const App = () => {
@@ -24,8 +24,8 @@ export const App = () => {
             <Route path={ROUTES.EXPERIENCE} element={<Experience />} />
           </Route>
           <Route path={ROUTES.SIGN_IN} element={<Login />} />
-{/*           <Route path={ROUTES.USER}>
-            <Route path={ROUTES.USER_PROFILE} element={<MyProfile />} />
+          <Route path={ROUTES.USER_PROFILE} element={<MyProfile />} />
+         {/*  <Route path={ROUTES.USER}>
             <Route path={ROUTES.USER_EXPERIENCES} element={<MyExperiences />} />
           </Route>
           <Route path="*" element={<NoMatch />} /> */}
