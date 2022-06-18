@@ -12,6 +12,11 @@
       "email": "mi@mail.com",
       "password": "$2a$10$s7eexebYmZldBgdUB2uXqeH3KmNhGHozJliuj3CWaSZlCcGC.PiX6",
       "id": 1
+    },
+    {
+      "email": "otro@mail.com",
+      "password": "$2a$10$0CVtT1HBjqyVvP2DBweDCuZ/QzN/TP7lXKrvpvBg1OUtiu7T3XfYG",
+      "id": 2
     }
   ]
 }

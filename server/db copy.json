@@ -1,0 +1,21 @@
+{
+  "experiencias": [
+    {
+      "id": 1,
+      "texto": "Esto es una prueba",
+      "userId": 1
+    }
+  ],
+  "users": [
+    {
+      "email": "mi@mail.com",
+      "password": "$2a$10$G4KB80prDe43dpmj96dfj.vI7sB.KdPRcxL31Vj4mUqbSoxJ4wDAy",
+      "id": 1
+    },
+    {
+      "email": "otro@mail.com",
+      "password": "$2a$10$/9z34wdsEOTJ5hHUpoi1JO3a/x0tfD3EJnrisA4v/nSWJBcQ7gxl2",
+      "id": 2
+    }
+  ]
+}

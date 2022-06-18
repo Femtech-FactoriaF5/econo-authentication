@@ -1,7 +1,7 @@
 import { useSearchParams } from "react-router-dom";
 
 const Gallery = () => {
-  
+
   const [searchParams, setSearchParams]=useSearchParams();
   const searchTerm = searchParams.get('title') || '';
   return (
